@@ -15,8 +15,8 @@ export default function PortfolioContainer() {
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
     return <Contact />;
   };
@@ -25,10 +25,15 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+        <h2> this is a header 2 test</h2>
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+    
       {/* Here we are calling the renderPage method which will return a component  */}
-      {renderPage()}
+      <h1> This is a test to see what shows on page</h1>
+      <p> body tag to again test and see what is visible</p> 
+       <Header />
+      <Footer />
+
     </div>
   );
 }
