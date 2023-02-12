@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
-import Header from './Header';
 import Footer from './Footer';
+import Header from './Header';
+import About from '../pages/About';
+import Contact from '../pages/Contact';
+import Home from '../pages/Home';
+import Portfolio from '../pages/Portfolio';
 
 
 
@@ -25,15 +29,12 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-        <h2> this is a header 2 test</h2>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-    
-      {/* Here we are calling the renderPage method which will return a component  */}
-      <h1> This is a test to see what shows on page</h1>
-      <p> body tag to again test and see what is visible</p> 
-       <Header />
-      <Footer />
+           <Header />
+        {renderPage()}
 
+
+      <Footer />
     </div>
   );
 }

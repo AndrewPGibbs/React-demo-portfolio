@@ -1,5 +1,7 @@
 const footer = () => {
-    return ( 2 );
+    return ( 
+        <h3> big ol footer down here</h3>
+     );
 }
  
 export default footer;
