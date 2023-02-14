@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+#headshot {
+  max-width: 17%;  
+height: auto;  
+}
+#punchline {
+  max-width: 45%;  
+height: auto;  
+}
+
+#profilePhoto {
+  max-width: 3%;  
+height: auto;  
+justify-content: left;
+display: flex;
+}

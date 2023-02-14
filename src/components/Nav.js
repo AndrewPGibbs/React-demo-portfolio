@@ -1,9 +1,14 @@
 import React from "react";
+import image from '../images/touchedupPFP-modified.png';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <div>
+  
+    <ul className="nav nav-tabs"> 
+         <img src={image} id='profilePhoto' alt="headshot of Andrew Gibbs"></img>
       <li className="nav-item">
+        
         <a
           href="#home"
           onClick={() => handlePageChange("Home")}
@@ -40,6 +45,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </div>
   );
 }
 

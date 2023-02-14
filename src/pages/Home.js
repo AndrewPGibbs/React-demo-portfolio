@@ -1,8 +1,10 @@
 import React from 'react';
+import portrait from '../images/joke.png';
 
 export default function Home() {
   return (
     <div>
+        <img id='headshot'src={portrait} alt='Professional self Portrait in a suit and a white background'></img>
       <h1>Home Page</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
