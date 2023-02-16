@@ -1,11 +1,12 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.scss';
-import PortfolioContainer from './components/PortfolioContainer';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="App">
-   <PortfolioContainer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}/>
+   </Routes>
   );
 }
 
