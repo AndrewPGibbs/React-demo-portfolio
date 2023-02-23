@@ -1,13 +1,27 @@
-import { Link, NavLink } from 'react-router-dom';
-import './index.scss';
-import LogoS from '../../assets/images/logo-s.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faUser, faHome} from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import './index.scss'
+import { useState } from 'react'
+import LogoS from '../../assets/images/logo-s.png'
+import LogoSubtitle from '../../assets/images/logo_sub.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faLinkedin,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons'
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faSuitcase,
+  faBars,
+  faClose,
+} from '@fortawesome/free-solid-svg-icons'
+import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
-  ;<div className="nav-bar">
+  const [showNav, setShowNav] = useState(false);
+
+  return (
+  <div className="nav-bar">
     <Link className="logo" to="/">
       <img src={LogoS} alt="logo"></img>
       <img src={LogoSubtitle} className="sub-logo" alt="logo"></img>
@@ -44,7 +58,7 @@ const Sidebar = () => {
         </li>
         <li>
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andrew-gibbs-76a316254/">
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
             </a>
         </li>
         <li>
@@ -54,5 +68,6 @@ const Sidebar = () => {
         </li>
     </ul>
   </div>
+  )
 }
 export default Sidebar
