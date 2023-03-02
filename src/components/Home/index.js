@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from '../Home/Logo'
 import './index.scss'  
+import Loader from 'react-loaders'
 
 
 const Home = () => {
@@ -47,6 +48,7 @@ const Home = () => {
             <Logo />
 
         </div>
+        <Loader type='pacman' />
         </>
     )
 }
